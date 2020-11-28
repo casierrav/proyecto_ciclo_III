@@ -26,45 +26,51 @@ Normalmente un buen diseño, una buena planeación, un buen manejo del equipo de
 A continuacuón se mencionan los comandos más regulares de GIT para cada tarea:
 
 ### Clonación inicial del Proyecto (computador personal o servidor)
-´´´
+```
 git init
 git remote add origin link_github
 git fetch
 git pull origin main
-´´´
+```
+
+Para configurar las credenciales de su usuario de GitHub, agregue la siguiente línea. La primera vez que haga un push, usted deberá ingresar el usuario y contraseña de Github, y para el proyecto nunca más le serán solicitadas.
+```
+git config credential.helper store
+
+```
 
 ### Subir cambios realizados (solo desde el computador personal)
 Para verificar cuales archivos han sido modificados, pero que aún no se han subido al repositorio puede utilizar:
-´´´
+```
 git status
-´´´
+```
 
 Para subir uno o varios archivos puede hacer la siguiente secuencia:
-´´´
+```
 git add archivo_1
 git add archivo_2
 ...
 git commit -m "Mensaje que explique el cambio"
 git push origin nombre_rama
-´´´
+```
 
 ### Descargar los últimos cambios del repositorio (computador personal o servidor)
 Para bajar los cambios de una rama específica, puede usar el siguiente comando:
-´´´
+```
 git pull origin nombre_rama
-´´´
+```
 
 Si desea bajar todos los cambios asociados a todas las ramas, puede utilizar esto:
-´´´
+```
 git fetch
-´´´
+```
 
 ### Comandos de GIT adicionales
-´´´
+```
 git log
-´´´
+```
 
-´´´
+```
 git rebase
-´´´
+```
 
