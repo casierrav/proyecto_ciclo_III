@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8" />
+      <title>Return first and last name from a form - w3resource</title>
+      
+      <!-- Descripción del sitio web -->
+	 <meta name="description" content="Este ejemplo se utiliza para mostrar el funcionamiento de un formulario, en donde se tienen dos campos de texto editable, y se tiene un botón, además del envío del formulario, imprime los valores escritos en la consola del navegador (F12)">
+      <!-- Autor del sitio web -->
+      <meta name="author" content="w3resorce">
+      <!-- Palabras clave que suelen ser usadas para mejorar la indexación de los buscadores web -->   
+      <meta name="keywords" content="mintic, misiontic">
+
+      <!-- Estilo CSS aplicado al sitio web para colocar márgenes en todos los lados -->
+      <style type="text/css">
+         body {
+             margin: 30px;
+         }
+      </style>
+   </head>
+   <body>
+      <!-- Etiqueta form es para definir que todo lo que está adentro de la misma hace parte de un formulario -->
+      <form id="form1" onsubmit="getFormvalue()">
+         <!-- Etiqueta input es bastante utilizada en formularios, cuanto es type="text" es un textBox para ingresar datos -->
+         First name: <input type="text" name="fname" value="David"><br>
+         Last name: <input type="text" name="lname" value="Beckham"><br>
+         
+         <!-- Etiqueta input con type="submit", lo cual indica que es un botón que hace el envío de datos diligenciados en el formulario -->
+         <input type="submit" value="Submit">
+      </form>
+   </body>
+   <!-- "Importa" la función de JS escrita en el archivo code.js -->
+   <script type="text/javascript" src="code.js"></script>
+</html>
