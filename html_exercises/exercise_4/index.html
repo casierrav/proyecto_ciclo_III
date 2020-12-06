@@ -1,10 +1,25 @@
 <!DOCTYPE html>
 <html>
    <head>
-      <meta charset=utf-8 />
+      <meta charset="utf-8" />
+      <title>Collect the value of href, hreflang, rel, target, and type attributes of a link</title> 
+      
+      <!-- Descripción del sitio web -->
+	 <meta name="description" content="Este es un ejemplo sencillo del uso de HTML y JavaScript para llamar a un vínculo, y usando ventanas emergentes se muestran propiedades (o atributos) asociados a dicho vínculo">
+      <!-- Autor del sitio web -->
+      <meta name="author" content="w3resorce">
+      <!-- Palabras clave que suelen ser usadas para mejorar la indexación de los buscadores web -->   
+      <meta name="keywords" content="mintic, misiontic">
    </head>
    <body>
-      <p><a id="w3r" type="text/html" hreflang="en-us" rel="nofollow" target="_self" href="https://www.w3resource.com/">w3resource</a></p>
+      <!-- La etiqueta p es para definir párrafos -->
+      <p>
+         <!-- La etiqueta a es para construir vínculos, siendo el href quien determina hacia donde se dirige el vínculo -->
+         <a id="w3r" type="text/html" hreflang="en-us" rel="nofollow" target="_self" href="https://www.w3resource.com/">w3resource</a>
+      </p>
+      <!-- La etiqueta button es para crear un botón, y cuando se le de click llamara a la función definida en el atributo onclick -->
       <button onclick="getAttributes()">Click here to get  attributes value</button>
    </body>
+   <!-- "Importa" la función de JS escrita en el archivo code.js -->
+   <script type="text/javascript" src="code.js"></script>
 </html>
