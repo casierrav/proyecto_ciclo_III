@@ -3,18 +3,38 @@
    <head>
       <meta charset=utf-8 />
       <title>Change the content of a cell</title>
+
+      <!-- Descripción del sitio web -->
+	 <meta name="description" content="Este ejemplo se utiliza para mostrar el funcionamiento de un formulario, en donde se tiene una tabla de tres filas y dos columnas, y al dar click en el botón se abre la opción de modificar el valor de alguna de las celdas">
+      <!-- Autor del sitio web -->
+      <meta name="author" content="w3resorce">
+      <!-- Palabras clave que suelen ser usadas para mejorar la indexación de los buscadores web -->   
+      <meta name="keywords" content="mintic, misiontic">
    </head>
    <body>
+      <!-- La etiqueta table es utilizada para definir la construcción de una tabla (tipo excel) en HTML -->
       <table id="myTable" border="1">
-         <tr><td>Row1 cell1</td>
-         <td>Row1 cell2</td></tr>
-         <tr><td>Row2 cell1</td>
-         <td>Row2 cell2</td></tr>
-         <tr><td>Row3 cell1</td>
-         <td>Row3 cell2</td></tr>
+         <!-- La etiqueta tr es utilizada para definir el inicio de una fila en la tabla -->
+         <tr>
+            <!-- La etiqueta td es utilizada para definir una columna. Cada fila se espera tenga la misma cantidad de columnas -->
+            <td>Row1 cell1</td>
+            <td>Row1 cell2</td>
+         </tr>
+         <tr>
+             <td>Row2 cell1</td>
+             <td>Row2 cell2</td>
+         </tr>
+         <tr>
+             <td>Row3 cell1</td>
+             <td>Row3 cell2</td>
+         </tr>
       </table>
+      <!-- La etiqueta form es para generar un formulario, que en este caso no tiene redirección a ninguna página -->
       <form>
+         <!-- Etiqueta muy usada en formularios, de type="button" que determina un botón asociado a un evento que invoca una función de JS -->
          <input type="button" onclick="changeContent()" value="Change content">
       </form>
    </body>
+   <!-- "Importa" la función de JS escrita en el archivo code.js -->
+   <script type="text/javascript" src="code.js"></script>
 </html>

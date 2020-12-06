@@ -3,15 +3,33 @@
    <head>
       <meta charset=utf-8 />
       <title>Insert row in a table - w3resource</title>
+
+      <!-- Descripción del sitio web -->
+	 <meta name="description" content="Este es un ejemplo sencillo del uso de HTML y JavaScript para agregar una fila nueva, usando un botón, a una tabla ya creada en el HTML">
+      <!-- Autor del sitio web -->
+      <meta name="author" content="w3resorce">
+      <!-- Palabras clave que suelen ser usadas para mejorar la indexación de los buscadores web -->   
+      <meta name="keywords" content="mintic, misiontic">
    </head>
    <body>
+      <!-- La etiqueta table es utilizada para definir la construcción de una tabla (tipo excel) en HTML -->
       <table id="sampleTable" border="1">
-         <tr><td>Row1 cell1</td>
-         <td>Row1 cell2</td></tr>
-         <tr><td>Row2 cell1</td>
-         <td>Row2 cell2</td></tr>
+         <!-- La etiqueta tr es utilizada para definir el inicio de una fila en la tabla -->
+         <tr>
+            <!-- La etiqueta td es utilizada para definir una columna. Cada fila se espera tenga la misma cantidad de columnas -->
+            <td>Row1 cell1</td>
+            <td>Row1 cell2</td>
+         </tr>
+         <tr>
+            <td>Row2 cell1</td>
+            <td>Row2 cell2</td>
+         </tr>
       </table>
+      <!-- La etiqueta br es utilizada para hacer un salto de línea  -->      
       <br>
+      <!-- La etiqueta input es utilizada para definir componentes de formulario, en este caso el type="button" determina un botón que se asocia a un evento click que invoca una función de JS -->
       <input type="button" onclick="insert_Row()" value="Insert row"> 
    </body>
+   <!-- "Importa" la función de JS escrita en el archivo code.js -->
+   <script type="text/javascript" src="code.js"></script>
 </html>
