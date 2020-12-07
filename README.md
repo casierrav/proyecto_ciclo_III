@@ -1,5 +1,10 @@
 # Proyecto de Ciclo III
-Para el proyecto del Ciclo III hay varias cosas a tener en cuenta.
+Este es el repositorio de Ciclo III, con ejercicios e indicaciones para que ustedes logren el éxito en este último ciclo del año.
+
+## Contenido de Este repositorio
+1. Se tiene una carpeta llamada __html_exercices__ con las soluciones de los ejercicios de HTML y JS vistos en la introducción a desarrollo we.
+2. Se tiene una carpeta llamada __cajero_api__ con el desarrollo del back-end del ejemplo de cajero usado en clase, en donde la tecnología principal es FastAPI.
+3. Se tiene una carpeta llamada __cajero_ui__ donde estará todo lo relacionado al front-end del ejemplo del cajero usado en clase, en donde la tecnología principal es Vue.js.
 
 ## Gestión del Proyecto
 Recuerde usar Trello, crear todo con el template de Kanban en [este link](https://trello.com/templates/engineering/kanban-template-LGHXvZNL).
@@ -66,11 +71,7 @@ git fetch
 ```
 
 ### Comandos de GIT adicionales
+Si requiere ver el historial de los últimos commit realizados, puede utilizar el siguiente comando:
 ```
 git log
 ```
-
-```
-git rebase
-```
-
