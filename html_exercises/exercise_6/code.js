@@ -5,7 +5,7 @@ function changeContent() {
    content = window.prompt("Input the Cell content");  
 
    //Se toma una celda de la tabla, usando el id de la tabla, inicialmente sacando la fila
-   var x=document.getElementById('myTable').rows[parseInt(rn,10)].cells;
+   var x = document.getElementById('myTable').rows[parseInt(rn,10)].cells;
    //Estando en la fila, se ubica la columna correspondiente y se asigna el valor escrito por el usuario
-   x[parseInt(cn,10)].innerHTML=content;
+   x[parseInt(cn,10)].innerHTML = content;
 }
