@@ -3,8 +3,6 @@ from pydantic import BaseModel
 
 
 class TransactionInDB(BaseModel):
-	'''
-
     id_transaction: int = 0
     username: str
     date: datetime = datetime.now()
