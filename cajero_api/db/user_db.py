@@ -1,3 +1,17 @@
+from sqlalchemy import Column, Integer, String
+from db.db_connection import Base, engine
+
+class UserInDB(Base):
+    __tablename__ = "users"
+    
+    username    = Column(String, primary_key=True, unique=True)
+    password    = Column(String, null=False)
+    balance     = Column(Integer)
+
+Base.metadata.create_all(bind=engine)
+
+
+'''
 from typing import  Dict
 from pydantic import BaseModel
 
@@ -30,5 +44,4 @@ def get_user(username: str):
 def update_user(user_in_db: UserInDB):
     database_users[user_in_db.username] = user_in_db
     return user_in_db
-
-
+'''
